@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PaginationController;
+use App\Http\Controllers\SpreadsheetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +28,5 @@ Route::group(['middleware'=>'guest'],function(){
 Route::post('/logout',[AuthController::class,'logout'])->name('logout')->middleware('auth');
 Route::get('/lang/{lang}',[ LanguageController::class,'switchLang'])->name('switch_lang');
 Route::get('/pagination-per-page/{per_page}',[ PaginationController::class,'set_pagination_per_page'])->name('pagination_per_page');
+
+Route::get('/fetch-jobs', [SpreadsheetController::class, 'importFromGoogleSheets']);
