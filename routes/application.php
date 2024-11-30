@@ -105,4 +105,6 @@ Route::group(['middleware'=>'auth'],function(){
         });
     });    
 });
+
+
 /************************ Application Routes Ends ******************************/

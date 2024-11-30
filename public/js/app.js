@@ -2179,6 +2179,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the
@@ -2187,13 +2188,17 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
  */
+
 // import Echo from 'laravel-echo';
+
 // window.Pusher = require('pusher-js');
+
 // window.Echo = new Echo({
 //     broadcaster: 'pusher',
 //     key: process.env.MIX_PUSHER_APP_KEY,
@@ -2215,17 +2220,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _setup_clear_input_file_field__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setup_clear_input_file_field */ "./resources/js/form/setup_clear_input_file_field.js");
 
 
+
 /**
  * Init
  *
  * @return void
  */
-
 function init() {
   (0,_setup_image_preview_field__WEBPACK_IMPORTED_MODULE_0__.setup_image_preview_field)();
   (0,_setup_clear_input_file_field__WEBPACK_IMPORTED_MODULE_1__.setup_clear_input_file_field)();
 }
-
 init();
 
 /***/ }),
@@ -2239,28 +2243,18 @@ init();
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "setup_clear_input_file_field": () => (/* binding */ setup_clear_input_file_field)
+/* harmony export */   setup_clear_input_file_field: () => (/* binding */ setup_clear_input_file_field)
 /* harmony export */ });
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * Setup Clear Input
  *
@@ -2270,61 +2264,61 @@ function setup_clear_input(event) {
   if (!input_has_file(this)) {
     return;
   }
+  event.preventDefault();
 
-  event.preventDefault(); // Clear Input
+  // Clear Input
+  clear_input(this);
 
-  clear_input(this); // Update Status
+  // Update Status
+  this.setAttribute('data-input-has-file', 0);
 
-  this.setAttribute('data-input-has-file', 0); // Update Input Removal Status Field
+  // Update Input Removal Status Field
+  update_input_removal_status_field(this);
 
-  update_input_removal_status_field(this); // Update Clear Button Icon
+  // Update Clear Button Icon
+  update_clear_button_icon(this);
 
-  update_clear_button_icon(this); // Update Clear Button Title
+  // Update Clear Button Title
+  update_clear_button_title(this);
 
-  update_clear_button_title(this); // Reset Preview
-
+  // Reset Preview
   reset_preview(this);
 }
+
 /**
  * Update Clear Button Icon
  *
  * @return void
  */
-
-
 function update_clear_button_icon(self) {
   var button_img = self.querySelector('img');
   var img_key = input_has_file(self) ? 'data-clear-icon' : 'data-pick-icon';
   var img = self.getAttribute(img_key);
   button_img.src = img;
 }
+
 /**
  * Update Clear Button Title
  *
  * @return void
  */
-
-
 function update_clear_button_title(self) {
   var img_key = input_has_file(self) ? 'data-clear-title' : 'data-pick-title';
   var title = self.getAttribute(img_key);
   self.setAttribute('title', title);
 }
+
 /**
  * Clear Input
  *
  * @return bool
  */
-
-
 function clear_input(self) {
   var inputElement = get_input_element(self);
   var value = inputElement.value;
-
   if (!value) {
     return false;
   }
-
   var form = document.createElement('form');
   var ref = inputElement.nextSibling;
   form.appendChild(inputElement);
@@ -2332,157 +2326,133 @@ function clear_input(self) {
   ref.parentNode.insertBefore(inputElement, ref);
   return true;
 }
+
 /**
  * Reset Preview
  *
  * @return bool
  */
-
-
 function reset_preview(self) {
   var previewElementClass = self.getAttribute('data-preview-element');
   var defaultPreviewImage = self.getAttribute('data-default-preview-image');
-
   if (!previewElementClass) {
     return false;
   }
-
   var previewElement = document.querySelector('.' + previewElementClass);
-
   if (!previewElement) {
     return false;
   }
-
   previewElement.src = defaultPreviewImage ? defaultPreviewImage : '';
   return true;
 }
+
 /**
  * Get Input Element
  *
  * @return mixed
  */
-
-
 function get_input_element(self) {
   var inputElementID = self.getAttribute('data-input-element-id');
   var inputElementClass = self.getAttribute('data-intput-element-class');
-
   if (!inputElementID && !inputElementClass) {
     return null;
   }
-
   var inputElementKey = inputElementID ? '#' + inputElementID : '.' + inputElementClass;
   var inputElement = document.querySelector(inputElementKey);
-
   if (!inputElement) {
     return null;
   }
-
   return inputElement;
 }
+
 /**
  * Input Has File
  *
  * @return bool
  */
-
-
 function input_has_file(self) {
   var input_has_file = self.getAttribute('data-input-has-file');
-
   if (!input_has_file) {
     return false;
   }
-
   if ('0' == input_has_file) {
     return false;
   }
-
   return true;
 }
+
 /**
  * Update Input Removal Status Field
  *
  * @return void
  */
-
-
 function update_input_removal_status_field(self) {
   var field_key = self.getAttribute('data-input-removal-status-field');
   console.log({
     field_key: field_key
   });
-
   if (!field_key) {
     return;
   }
-
   var field = document.querySelector('.' + field_key);
   console.log({
     field: field
   });
-
   if (!field) {
     return;
   }
-
   field.value = input_has_file(self) ? '' : '1';
 }
+
 /**
  * Update Status
  *
  * @return void
  */
-
-
 function update_status(self, event) {
   var _event$target$files = _slicedToArray(event.target.files, 1),
-      file = _event$target$files[0];
-
+    file = _event$target$files[0];
   var status = file ? 1 : 0;
   self.setAttribute('data-input-has-file', status);
 }
+
 /**
  * Setup Clear Input File Field
  *
  * @return void
  */
-
-
 function setup_clear_input_file_field() {
   var items = document.querySelectorAll('.clear-input-file-btn');
-
   if (!items.length) {
     return;
   }
-
   var _loop = function _loop() {
-    var item = _arr2[_i2];
+    var item = _arr[_i];
     var inputElement = get_input_element(item);
-
     if (!inputElement) {
-      return "continue";
-    } // Setup clear input
+      return 1; // continue
+    }
 
+    // Setup clear input
+    item.addEventListener('click', setup_clear_input);
 
-    item.addEventListener('click', setup_clear_input); // Input element on change tasks
-
+    // Input element on change tasks
     inputElement.addEventListener('change', function (event) {
       // Update Status
-      update_status(item, event); // Update Input Removal Status Field
+      update_status(item, event);
 
-      update_input_removal_status_field(item); // Update Clear Button Icon
+      // Update Input Removal Status Field
+      update_input_removal_status_field(item);
 
-      update_clear_button_icon(item); // Update Clear Button Title
+      // Update Clear Button Icon
+      update_clear_button_icon(item);
 
+      // Update Clear Button Title
       update_clear_button_title(item);
     });
   };
-
-  for (var _i2 = 0, _arr2 = _toConsumableArray(items); _i2 < _arr2.length; _i2++) {
-    var _ret = _loop();
-
-    if (_ret === "continue") continue;
+  for (var _i = 0, _arr = _toConsumableArray(items); _i < _arr.length; _i++) {
+    if (_loop()) continue;
   }
 }
 
@@ -2497,28 +2467,18 @@ function setup_clear_input_file_field() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "setup_image_preview_field": () => (/* binding */ setup_image_preview_field)
+/* harmony export */   setup_image_preview_field: () => (/* binding */ setup_image_preview_field)
 /* harmony export */ });
-function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
-
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
-
-function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 /**
  * Update Preview
  *
@@ -2526,58 +2486,36 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
  */
 function update_preview(event) {
   var previewElementClass = event.target.getAttribute('data-preview-element');
-
   if (!previewElementClass) {
     return;
   }
-
   var previewElement = document.querySelector('.' + previewElementClass);
-
   if (!previewElement) {
     return;
   }
-
   var _event$target$files = _slicedToArray(event.target.files, 1),
-      file = _event$target$files[0];
-
+    file = _event$target$files[0];
   if (!file) {
     return;
   }
-
   previewElement.src = URL.createObjectURL(file);
 }
+
 /**
  * Setup Image Preview Field
  *
  * @return void
  */
-
-
 function setup_image_preview_field() {
   var image_upload_fields = document.querySelectorAll('.image-upload-field');
-
   if (!image_upload_fields.length) {
     return;
   }
-
-  for (var _i2 = 0, _arr2 = _toConsumableArray(image_upload_fields); _i2 < _arr2.length; _i2++) {
-    var field = _arr2[_i2];
+  for (var _i = 0, _arr = _toConsumableArray(image_upload_fields); _i < _arr.length; _i++) {
+    var field = _arr[_i];
     field.addEventListener('change', update_preview);
   }
 }
-
-/***/ }),
-
-/***/ "./resources/css/app.scss":
-/*!********************************!*\
-  !*** ./resources/css/app.scss ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
 
 /***/ }),
 
@@ -19789,6 +19727,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
   // Check for `exports` after `define` in case a build optimizer adds it.
   else {}
 }.call(this));
+
+
+/***/ }),
+
+/***/ "./resources/css/app.scss":
+/*!********************************!*\
+  !*** ./resources/css/app.scss ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
 
 
 /***/ }),
